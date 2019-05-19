@@ -1,4 +1,4 @@
-# [Open Graph Image as a Service](https://og-image.now.sh)
+# [Dr. Banner](https://dr-image.now.sh)
 
 <a href="https://twitter.com/zeithq/status/1092587111985881088">
     <img align="right" src="https://raw.githubusercontent.com/zeit/og-image/master/public/tweet.png" height="300" />
@@ -32,7 +32,7 @@ It looks like the following:
 
 Read the [blog post](https://zeit.co/blog/social-og-image-cards-as-a-service) for more info on the "Why" part.
 
-The short answer is that it would take a long time to painstakingly design an image for every single blog post. And we don't want the exact same image for every blog post because that wouldn't make the article stand out when it was shared to Twitter. 
+The short answer is that it would take a long time to painstakingly design an image for every single blog post. And we don't want the exact same image for every blog post because that wouldn't make the article stand out when it was shared to Twitter.
 
 That's where `og-image.now.sh` comes in. We can simply pass the title of our blog post to our generator service and it will generate the image for us on the fly!
 
