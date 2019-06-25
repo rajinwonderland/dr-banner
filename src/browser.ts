@@ -172,9 +172,10 @@ const imageLightOptions: DropdownOption[] = [
 			'https://assets.zeit.co/image/upload/front/assets/design/hyper-color-logo.svg'
 	},
 	{
-		text: "Birdseye",
-		value: "https://res.cloudinary.com/novvum-banner/image/upload/v1561500190/Birds_Eye_Red_v73av1.svg"
-	}
+		text: 'Birdseye',
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500190/Birds_Eye_Red_v73av1.svg'
+	},
 	{
 		text: '36 Concepts',
 		value:
@@ -203,6 +204,11 @@ const imageLightOptions: DropdownOption[] = [
 	{
 		text: 'GraphQL',
 		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/graphql.svg'
+	},
+	{
+		text: 'Rust',
+		value:
+			'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/220px-Rust_programming_language_black_logo.svg.png'
 	}
 ];
 
@@ -232,7 +238,7 @@ const imageDarkOptions: DropdownOption[] = [
 			'https://assets.zeit.co/image/upload/front/assets/design/hyper-bw-logo.svg'
 	},
 	{
-		text: '36 Concepts',
+		text: '36 Concepts Dark',
 		value:
 			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/36_dark_haokt6.svg'
 	},
@@ -247,13 +253,17 @@ const imageDarkOptions: DropdownOption[] = [
 			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500229/MarvelQL_mrvdgq.svg'
 	},
 	{
-		text: 'GatsbyJS',
-		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/gatsby.svg'
+		text: 'GatsbyJS Dark',
+		value: 'https://cdn.auth0.com/blog/gatsby-react-webtask/logo.png'
 	},
 	{
-		text: 'GraphQL',
+		text: 'GraphQL Dark',
 		value:
 			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/graphql_s3e5be.png'
+	},
+	{
+		text: 'Rust Dark',
+		value: 'http://reach.rust-lang.org/static/rust-logo-white.png'
 	}
 ];
 
