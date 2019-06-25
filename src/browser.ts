@@ -171,11 +171,30 @@ const imageLightOptions: DropdownOption[] = [
 		value:
 			'https://assets.zeit.co/image/upload/front/assets/design/hyper-color-logo.svg'
 	},
+	{
+		text: "Birdseye",
+		value: "https://res.cloudinary.com/novvum-banner/image/upload/v1561500190/Birds_Eye_Red_v73av1.svg"
+	}
+	{
+		text: '36 Concepts',
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/36_ccdidi.svg'
+	},
+	{
+		text: 'PyMarvelQL',
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500231/pymarvelql_bjqzoe.svg'
+	},
+	{
+		text: 'MarvelQL',
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500229/MarvelQL_mrvdgq.svg'
+	},
 
 	{
-		text: 'Auth0',
+		text: 'Playground',
 		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1558125087/auth0_q3dibq.svg'
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500230/playground_qq3qtu.png'
 	},
 	{
 		text: 'GatsbyJS',
@@ -213,18 +232,28 @@ const imageDarkOptions: DropdownOption[] = [
 			'https://assets.zeit.co/image/upload/front/assets/design/hyper-bw-logo.svg'
 	},
 	{
-		text: 'Auth0',
+		text: '36 Concepts',
 		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1558125087/auth0_q3dibq.svg'
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/36_dark_haokt6.svg'
 	},
-
+	{
+		text: 'PyMarvelQL',
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500231/pymarvelql_bjqzoe.svg'
+	},
+	{
+		text: 'MarvelQL',
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500229/MarvelQL_mrvdgq.svg'
+	},
 	{
 		text: 'GatsbyJS',
 		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/gatsby.svg'
 	},
 	{
 		text: 'GraphQL',
-		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/graphql.svg'
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/graphql_s3e5be.png'
 	}
 ];
 
