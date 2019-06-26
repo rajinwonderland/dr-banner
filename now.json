@@ -2,7 +2,7 @@
 	"name": "banner",
 
 	"version": 2,
-	"regions": ["dev1"],
+	"regions": ["sfo1"],
 	"public": true,
 	"builds": [
 		{ "src": "public/*", "use": "@now/static" },

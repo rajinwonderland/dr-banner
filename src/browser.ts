@@ -148,6 +148,11 @@ const markdownOptions: DropdownOption[] = [
 
 const imageLightOptions: DropdownOption[] = [
 	{
+		text: 'Oh Snap!',
+		value:
+			'https://res.cloudinary.com/teepublic/image/private/s---v_uxXyT--/t_Preview/b_rgb:191920,c_limit,f_jpg,h_630,q_90,w_630/v1545668320/production/designs/3815138_0.jpg'
+	},
+	{
 		text: 'Novvum',
 		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/novvum-flat.svg'
 	},
@@ -179,7 +184,7 @@ const imageLightOptions: DropdownOption[] = [
 	{
 		text: '36 Concepts',
 		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/36_ccdidi.svg'
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561501682/36_ctrm4h.svg'
 	},
 	{
 		text: 'PyMarvelQL',
@@ -214,6 +219,11 @@ const imageLightOptions: DropdownOption[] = [
 
 const imageDarkOptions: DropdownOption[] = [
 	{
+		text: 'Oh Snap! Dark',
+		value:
+			'https://res.cloudinary.com/teepublic/image/private/s---v_uxXyT--/t_Preview/b_rgb:191920,c_limit,f_jpg,h_630,q_90,w_630/v1545668320/production/designs/3815138_0.jpg'
+	},
+	{
 		text: 'Novvum',
 		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/novvum-flat.svg'
 	},
@@ -240,7 +250,7 @@ const imageDarkOptions: DropdownOption[] = [
 	{
 		text: '36 Concepts Dark',
 		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/36_dark_haokt6.svg'
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561501682/36_dark_ywjorp.svg'
 	},
 	{
 		text: 'PyMarvelQL',
@@ -318,7 +328,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
 		fontSize = '100px',
 		theme = 'light',
 		md = true,
-		text = '**Hello** World',
+		text = 'OH **SNAP!?!**',
 		images = [imageLightOptions[0].value],
 		widths = [],
 		heights = [],
