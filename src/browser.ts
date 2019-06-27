@@ -128,7 +128,12 @@ const Toast = ({ show, message }: ToastProps) => {
 
 const themeOptions: DropdownOption[] = [
 	{ text: 'Light', value: 'light' },
-	{ text: 'Dark', value: 'dark' }
+	{ text: 'Dark', value: 'dark' },
+	{ text: 'Pink', value: 'pink' },
+	{ text: 'Blue', value: 'blue' },
+	{ text: 'Purple', value: 'purple' },
+	{ text: 'Charcoal', value: 'charcoal' },
+	{ text: 'Dracula', value: 'dracula' }
 ];
 
 const fileTypeOptions: DropdownOption[] = [
@@ -148,13 +153,36 @@ const markdownOptions: DropdownOption[] = [
 
 const imageLightOptions: DropdownOption[] = [
 	{
-		text: 'Oh Snap!',
-		value:
-			'https://res.cloudinary.com/teepublic/image/private/s---v_uxXyT--/t_Preview/b_rgb:191920,c_limit,f_jpg,h_630,q_90,w_630/v1545668320/production/designs/3815138_0.jpg'
-	},
-	{
 		text: 'Novvum',
 		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/novvum-flat.svg'
+	},
+	{
+		text: '36 Concepts',
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561501682/36_ctrm4h.svg'
+	},
+	{
+		text: 'PyMarvelQL',
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500231/pymarvelql_bjqzoe.svg'
+	},
+	{
+		text: 'MarvelQL',
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500229/MarvelQL_mrvdgq.svg'
+	},
+	{
+		text: 'GatsbyJS',
+		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/gatsby.svg'
+	},
+	{
+		text: 'GraphQL',
+		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/graphql.svg'
+	},
+	{
+		text: 'Rust',
+		value:
+			'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/220px-Rust_programming_language_black_logo.svg.png'
 	},
 	{
 		text: 'Now',
@@ -180,11 +208,18 @@ const imageLightOptions: DropdownOption[] = [
 		text: 'Birdseye',
 		value:
 			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500190/Birds_Eye_Red_v73av1.svg'
+	}
+];
+
+const imageDarkOptions: DropdownOption[] = [
+	{
+		text: 'Novvum',
+		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/novvum-flat.svg'
 	},
 	{
 		text: '36 Concepts',
 		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1561501682/36_ctrm4h.svg'
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561501682/36_dark_ywjorp.svg'
 	},
 	{
 		text: 'PyMarvelQL',
@@ -196,36 +231,18 @@ const imageLightOptions: DropdownOption[] = [
 		value:
 			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500229/MarvelQL_mrvdgq.svg'
 	},
-
-	{
-		text: 'Playground',
-		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500230/playground_qq3qtu.png'
-	},
 	{
 		text: 'GatsbyJS',
-		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/gatsby.svg'
+		value: 'https://cdn.auth0.com/blog/gatsby-react-webtask/logo.png'
 	},
 	{
 		text: 'GraphQL',
-		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/graphql.svg'
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/graphql_s3e5be.png'
 	},
 	{
 		text: 'Rust',
-		value:
-			'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/220px-Rust_programming_language_black_logo.svg.png'
-	}
-];
-
-const imageDarkOptions: DropdownOption[] = [
-	{
-		text: 'Oh Snap! Dark',
-		value:
-			'https://res.cloudinary.com/teepublic/image/private/s---v_uxXyT--/t_Preview/b_rgb:191920,c_limit,f_jpg,h_630,q_90,w_630/v1545668320/production/designs/3815138_0.jpg'
-	},
-	{
-		text: 'Novvum',
-		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/novvum-flat.svg'
+		value: 'http://reach.rust-lang.org/static/rust-logo-white.png'
 	},
 	{
 		text: 'Now',
@@ -246,34 +263,6 @@ const imageDarkOptions: DropdownOption[] = [
 		text: 'Hyper',
 		value:
 			'https://assets.zeit.co/image/upload/front/assets/design/hyper-bw-logo.svg'
-	},
-	{
-		text: '36 Concepts Dark',
-		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1561501682/36_dark_ywjorp.svg'
-	},
-	{
-		text: 'PyMarvelQL',
-		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500231/pymarvelql_bjqzoe.svg'
-	},
-	{
-		text: 'MarvelQL',
-		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500229/MarvelQL_mrvdgq.svg'
-	},
-	{
-		text: 'GatsbyJS Dark',
-		value: 'https://cdn.auth0.com/blog/gatsby-react-webtask/logo.png'
-	},
-	{
-		text: 'GraphQL Dark',
-		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/graphql_s3e5be.png'
-	},
-	{
-		text: 'Rust Dark',
-		value: 'http://reach.rust-lang.org/static/rust-logo-white.png'
 	}
 ];
 
@@ -299,6 +288,34 @@ const heightOptions = [
 	{ text: '350', value: '350' }
 ];
 
+const themeImages = {
+	light: imageLightOptions,
+	dark: imageDarkOptions.map((x) => ({
+		text: `${x.text} Dark`,
+		value: x.value
+	})),
+	pink: imageDarkOptions.map((x) => ({
+		text: `${x.text} Pink`,
+		value: x.value
+	})),
+	blue: imageDarkOptions.map((x) => ({
+		text: `${x.text} Blue`,
+		value: x.value
+	})),
+	purple: imageDarkOptions.map((x) => ({
+		text: `${x.text} Purple`,
+		value: x.value
+	})),
+	charcoal: imageDarkOptions.map((x) => ({
+		text: `${x.text} Charcoal`,
+		value: x.value
+	})),
+	dracula: imageDarkOptions.map((x) => ({
+		text: `${x.text} Dracula`,
+		value: x.value
+	}))
+};
+
 interface AppState extends ParsedRequest {
 	loading: boolean;
 	showToast: boolean;
@@ -318,7 +335,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
 			newState.overrideUrl = state.overrideUrl;
 		}
 		if (newState.overrideUrl) {
-			timeout = window.setTimeout(() => setState({ overrideUrl: null }), 200);
+			timeout = window.setTimeout(() => setState({ overrideUrl: null }), 500);
 		}
 
 		setState({ ...newState, loading: true });
@@ -339,7 +356,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
 		overrideUrl = null
 	} = state;
 	const mdValue = md ? '1' : '0';
-	const imageOptions = theme === 'light' ? imageLightOptions : imageDarkOptions;
+	const imageOptions = themeImages[theme];
 	const url = new URL(window.location.origin);
 	url.pathname = `${encodeURIComponent(text)}.${fileType}`;
 	url.searchParams.append('theme', theme);
@@ -369,8 +386,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
 						options: themeOptions,
 						value: theme,
 						onchange: (val: Theme) => {
-							const options =
-								val === 'light' ? imageLightOptions : imageDarkOptions;
+							const options = themeImages[val];
 							let clone = [...images];
 							clone[0] = options[selectedImageIndex].value;
 							setLoadingState({ theme: val, images: clone });

@@ -25,10 +25,38 @@ export function parseRequest(req: IncomingMessage) {
 		text = arr.join('.');
 	}
 
+	const myTheme = (theme: Theme | any) => {
+		let val: Theme = 'light';
+		switch (theme) {
+			default:
+				val = 'light';
+				break;
+			case 'dark':
+				val = 'dark';
+				break;
+			case 'charcoal':
+				val = 'charcoal';
+				break;
+			case 'pink':
+				val = 'pink';
+				break;
+			case 'blue':
+				val = 'blue';
+				break;
+			case 'purple':
+				val = 'purple';
+				break;
+			case 'dracula':
+				val = 'dracula';
+				break;
+		}
+		return val;
+	};
+
 	const parsedRequest: ParsedRequest = {
 		fileType: extension === 'jpeg' ? extension : 'png',
 		text: decodeURIComponent(text),
-		theme: theme === 'dark' ? 'dark' : 'light',
+		theme: myTheme(theme),
 		md: md === '1' || md === 'true',
 		fontSize: fontSize || '96px',
 		images: getArray(images),

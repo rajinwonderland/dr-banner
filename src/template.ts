@@ -16,15 +16,39 @@ const mono = readFileSync(`${__dirname}/../.fonts/Vera-Mono.woff2`).toString(
 );
 
 function getCss(theme: string, fontSize: string) {
-	let background = 'white';
-	let foreground = 'black';
-	let radial = 'lightgray';
-
-	if (theme === 'dark') {
-		background = 'black';
-		foreground = 'white';
-		radial = 'dimgray';
+	let background;
+	let foreground;
+	switch (theme) {
+		case 'dark':
+			background = '#000';
+			foreground = '#fff';
+			break;
+		case 'charcoal':
+			background = '#333';
+			foreground = '#fff';
+			break;
+		case 'pink':
+			background = '#E10098';
+			foreground = '#fff';
+			break;
+		case 'blue':
+			background = '#00A4EF';
+			foreground = '#fff';
+			break;
+		case 'purple':
+			background = '#614ad3';
+			foreground = '#fff';
+			break;
+		case 'dracula':
+			background = '#282a36';
+			foreground = '#f8f8f2';
+			break;
+		default:
+			background = '#fff';
+			foreground = '#000';
+			break;
 	}
+
 	return `
     @font-face {
         font-family: 'Inter';
@@ -49,7 +73,6 @@ function getCss(theme: string, fontSize: string) {
 
     body {
         background: ${background};
-        background-image: radial-gradient(${radial} 5%, transparent 0);
         background-size: 60px 60px;
         height: 100vh;
         display: flex;
@@ -63,10 +86,6 @@ function getCss(theme: string, fontSize: string) {
         font-family: 'Vera';
         white-space: pre-wrap;
         letter-spacing: -5px;
-    }
-
-    code:before, code:after {
-        content: '\`';
     }
 
     .logo-wrapper {
@@ -119,7 +138,7 @@ export function getHtml(parsedReq: ParsedRequest) {
     </style>
     <body>
         <div>
-            <div class="spacer">
+            <div class="spacer"/>
             <div class="logo-wrapper">
                 ${images
 									.map(
@@ -130,7 +149,9 @@ export function getHtml(parsedReq: ParsedRequest) {
             </div>
             <div class="spacer">
             <div class="heading">${emojify(
-							md ? marked(text) : sanitizeHtml(text)
+							md
+								? marked(text, { smartypants: true, gfm: true })
+								: sanitizeHtml(text)
 						)}
             </div>
         </div>
