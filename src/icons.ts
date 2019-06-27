@@ -2609,4 +2609,4 @@ const icons: DropdownOption[] = [
 	}
 ];
 
-export default icons;
+module.exports = icons;

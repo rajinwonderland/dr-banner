@@ -162,6 +162,10 @@ const imageLightOptions: DropdownOption[] = [
 			'https://res.cloudinary.com/novvum-banner/image/upload/v1561501682/36_ctrm4h.svg'
 	},
 	{
+		text: 'Apollo',
+		value: 'http://www.discovermeteor.com/images/blog/apollo-logo.png'
+	},
+	{
 		text: 'PyMarvelQL',
 		value:
 			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500231/pymarvelql_bjqzoe.svg'
@@ -173,11 +177,41 @@ const imageLightOptions: DropdownOption[] = [
 	},
 	{
 		text: 'GatsbyJS',
-		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/gatsby.svg'
+		value: 'https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg'
+	},
+	{
+		text: 'Gitlab',
+		value:
+			'https://www.gillware.com/wp-content/uploads/2017/02/gitlab-logo-square.png'
+	},
+	{
+		text: 'Github',
+		value: 'https://image.flaticon.com/icons/svg/25/25231.svg'
+	},
+	{
+		text: 'Go',
+		value: 'https://www.idmworks.com/wp-content/uploads/2015/04/golang-250.png'
 	},
 	{
 		text: 'GraphQL',
-		value: 'https://s3-us-west-1.amazonaws.com/bruce-banner/graphql.svg'
+		value:
+			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/graphql_s3e5be.png'
+	},
+	{
+		text: 'Hasura',
+		value: 'https://miro.medium.com/fit/c/256/256/1*bL79wrUgRVJK6z_uSSyZCw.png'
+	},
+	{
+		text: 'MDX',
+		value: 'https://avatars0.githubusercontent.com/u/37453691?s=400&v=4'
+	},
+	{
+		text: 'Netlify',
+		value: 'https://www.netlify.com/img/press/logos/logomark.png'
+	},
+	{
+		text: 'React',
+		value: 'https://sap.github.io/ui5-webcomponents/images/react.svg'
 	},
 	{
 		text: 'Rust',
@@ -198,6 +232,11 @@ const imageLightOptions: DropdownOption[] = [
 		text: 'Next.js',
 		value:
 			'https://assets.zeit.co/image/upload/front/assets/design/nextjs-black-logo.svg'
+	},
+	{
+		text: 'Nexus',
+		value:
+			'https://camo.githubusercontent.com/0c362bbca889fdeb2807c9debb99c7c9238a39c3/68747470733a2f2f692e696d6775722e636f6d2f5935426744476c2e706e67'
 	},
 	{
 		text: 'Hyper',
@@ -222,6 +261,11 @@ const imageDarkOptions: DropdownOption[] = [
 			'https://res.cloudinary.com/novvum-banner/image/upload/v1561501682/36_dark_ywjorp.svg'
 	},
 	{
+		text: 'Apollo',
+		value:
+			'https://apollographql.gallerycdn.vsassets.io/extensions/apollographql/vscode-apollo/1.7.1/1559239615571/Microsoft.VisualStudio.Services.Icons.Default'
+	},
+	{
 		text: 'PyMarvelQL',
 		value:
 			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500231/pymarvelql_bjqzoe.svg'
@@ -233,12 +277,45 @@ const imageDarkOptions: DropdownOption[] = [
 	},
 	{
 		text: 'GatsbyJS',
-		value: 'https://cdn.auth0.com/blog/gatsby-react-webtask/logo.png'
+		value:
+			'https://opencollective-production.s3-us-west-1.amazonaws.com/573996b0-bb4c-11e7-bda9-3d09ee19e759.png'
+	},
+	{
+		text: 'Gitlab',
+		value:
+			'https://www.gillware.com/wp-content/uploads/2017/02/gitlab-logo-square.png'
+	},
+	{
+		text: 'Github',
+		value:
+			'https://www.pngkey.com/png/full/178-1787243_github-icon-png-github-icon-white-png.png'
+	},
+	{
+		text: 'Go',
+		value: 'https://www.idmworks.com/wp-content/uploads/2015/04/golang-250.png'
 	},
 	{
 		text: 'GraphQL',
 		value:
-			'https://res.cloudinary.com/novvum-banner/image/upload/v1561500228/graphql_s3e5be.png'
+			'https://cdn.freebiesupply.com/logos/large/2x/graphql-logo-black-and-white.png'
+	},
+	{
+		text: 'Hasura',
+		value:
+			'https://seeklogo.com/images/H/hasura-logo-B718105639-seeklogo.com.png'
+	},
+	{
+		text: 'MDX',
+		value: 'https://avatars0.githubusercontent.com/u/37453691?s=400&v=4'
+	},
+	{
+		text: 'Netlify',
+		value: 'https://www.netlify.com/img/press/logos/logomark-dark.png'
+	},
+	{
+		text: 'React',
+		value:
+			'http://www.embusinessproducts.com/wp-content/uploads/2019/01/react-logo-white.png'
 	},
 	{
 		text: 'Rust',
@@ -258,6 +335,10 @@ const imageDarkOptions: DropdownOption[] = [
 		text: 'Next.js',
 		value:
 			'https://assets.zeit.co/image/upload/front/assets/design/nextjs-white-logo.svg'
+	},
+	{
+		text: 'Nexus',
+		value: 'https://nexus.js.org/img/nexus.png'
 	},
 	{
 		text: 'Hyper',
@@ -517,7 +598,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
 						onclick: () => {
 							const nextImage =
 								images.length === 1
-									? 'https://cdn.jsdelivr.net/gh/remojansen/logo.ts@master/ts.svg'
+									? 'https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png'
 									: '';
 							setLoadingState({ images: [...images, nextImage] });
 						}

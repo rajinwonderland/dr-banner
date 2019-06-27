@@ -18,34 +18,43 @@ const mono = readFileSync(`${__dirname}/../.fonts/Vera-Mono.woff2`).toString(
 function getCss(theme: string, fontSize: string) {
 	let background;
 	let foreground;
+	let codeColor;
+
 	switch (theme) {
 		case 'dark':
 			background = '#000';
 			foreground = '#fff';
+			codeColor = '#2AC3D3';
 			break;
 		case 'charcoal':
 			background = '#333';
 			foreground = '#fff';
+			codeColor = '#f8f8f2';
 			break;
 		case 'pink':
 			background = '#E10098';
 			foreground = '#fff';
+			codeColor = 'black';
 			break;
 		case 'blue':
 			background = '#00A4EF';
 			foreground = '#fff';
+			codeColor = 'white';
 			break;
 		case 'purple':
-			background = '#614ad3';
+			background = '#663399';
 			foreground = '#fff';
+			codeColor = '#FFD600';
 			break;
 		case 'dracula':
 			background = '#282a36';
 			foreground = '#f8f8f2';
+			codeColor = '#64D6EC';
 			break;
 		default:
 			background = '#fff';
 			foreground = '#000';
+			codeColor = '#2AC3D3';
 			break;
 	}
 
@@ -82,7 +91,7 @@ function getCss(theme: string, fontSize: string) {
     }
 
     code {
-        color: #D400FF;
+        color: ${codeColor};
         font-family: 'Vera';
         white-space: pre-wrap;
         letter-spacing: -5px;
